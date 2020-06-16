@@ -1,0 +1,83 @@
+.main-content{
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+.title{
+	text-align: left;
+	padding-left: 114px;
+}
+/* 이미지 슬라이드 시작*/
+#img-slide{
+	width: 100%;
+	max-width: 1200px;
+	display: inline-block;
+	border:1px solid rgb(239,239,239);
+	overflow: hidden;
+	padding : 10px;
+	margin: 0px;
+}
+#img-slide li > .on{
+	display: block;
+}		
+#img-slide li > img{
+	display: none;
+	width: 1200px;
+    max-width: 100%;	
+}		
+#img-slide  li{
+	display: inline;
+	width: 100%;
+}
+/* 이미지 슬라이드 종료 */
+
+/* 메인 영역 시작 */
+.dress-box{
+	font-size: 13px;
+	width: 230px;
+	text-align:left;
+	display: inline-block;
+	margin-right: 10px;
+}
+.dress-con{
+	width: 190px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+}
+.normal{
+	text-decoration: line-through;
+}
+.sale{
+	color: red;
+}
+.colorchip > button{
+	width: 13px;
+	height: 13px;
+	border: none;
+}
+.btn-black{
+	background: black;
+}
+.btn-green{
+	background: green;
+}
+.btn-pink{
+	background: pink;	
+}
+/* 메인 영역 종료 */
+
+/* 서브메인배너 시작 */
+.subbanner > div{
+	margin-top: 80px;
+	margin-bottom: 50px;
+}
+.subbanner > div > img{
+    width: 965px;
+    max-width: 100%;	
+	border-top-right-radius: 55px;
+}
+/* 서브메인배너 종료 */
+
+.ratate{
+	transform: rotate(30deg;)
+}
