@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<title>My First Project</title>
+</head>
+<body>
+<input type="text" id="myValue" name="myValue" />
+	<button type="button" id="btn-send-get">get() 메소드로 전송</button>
+	<button type="button" id="btn-send-post">post() 메소드로 전송</button>
+</body>
+<script type"javascript">
+$(function() {
+  var myValue;
+
+  $("#btn-send-get").click(function() {
+    myValue = $("#myValue").val();
+    $.get("http://sample.devdic.com/ajax-test/receiver.php", {
+            myValue : myValue
+        }, function(response) {
+            console.log("GET으로 보내주신 데이터는 '" + response + "'입니다.");
+        });
+  });
+  // response매개변수가 결과값을 받는다 / 매개변수명은 지정되어있지않다
+
+  $("#btn-send-post").click(function() {
+    myValue = $("#myValue").val();
+    $.post("http://sample.devdic.com/ajax-test/receiver.php", {
+            myValue : myValue
+        }, function(response) {
+            console.log("POST로 보내주신 데이터는 '" + response + "'입니다.");
+        });
+  });
+  // (보완) 통신head에 포함시켜보낸다
+});	
+
+</script>
+</html>

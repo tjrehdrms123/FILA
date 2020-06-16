@@ -1,0 +1,28 @@
+#fEntry {
+    width: 500px; margin: 0 auto; border: 1px solid #CCC; border-radius: 5px;
+}
+#fEntry dl {
+    line-height: 26px; padding: 20px;
+}
+#fEntry input {
+    border: 1px solid #CCC; padding: 3px;
+}
+#fEntry input:hover {
+    background-color: #fbfcc2;
+}
+#btnEntry {
+    background-color: #054772; color: #FFF; padding: 5px 20px;
+}
+#btnEntry:hover {
+    background: #0a9ed8; cursor: pointer;
+}
+#commandbar {
+    margin: 10px; text-align: center;
+}
+.result-error {
+    color: red; margin-left: 10px;
+}
+.result-message {
+    color: blue; margin-left: 10px;
+}
+
