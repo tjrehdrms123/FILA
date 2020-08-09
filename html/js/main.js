@@ -41,7 +41,7 @@ function imgSlide(){
 			elImg[8].removeAttribute('class');
 			elImg[0].setAttribute('class','on');						
 		}			
-}; 
+};
 /*
     * /석동근/ 이미지 슬라이드 *
 	img 태그를 읽어와 on 이라는 class를 부여하는 형식입니다

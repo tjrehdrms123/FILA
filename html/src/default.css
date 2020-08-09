@@ -20,7 +20,11 @@ a:hover{
 body {
     margin: 0;
 }
-
+ul,li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
 /**************************************
  * 좁은 폭
  */
