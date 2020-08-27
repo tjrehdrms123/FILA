@@ -50,7 +50,7 @@
 	if (isset($_GET['sub'])) {
 		include "./sub/{$_GET['sub']}.html";
 	} else {
-		include "./main.html";	
+		include "./main.php";	
 	}
 	?>		
 	</div>
