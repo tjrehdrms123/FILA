@@ -279,7 +279,7 @@
                 </div>
             </div>
         </div>
-        <form action="<?php ?>" method="post" class="dress-submit">
+        <form action="./dressform.php" method="post" class="dress-submit">
             <div class="id-box">
                 <p>아이디</p>
                 <input type="text" name="name" placeholder="아이디를 입력해주세요"/>
@@ -295,7 +295,7 @@
                             for( $i = 0; $i<count($str);  $i++ ){
                                 $num = sprintf('%02d',($i+1));
                     ?>
-                    <option value="<?php echo $str[$i]['sub_title']?>"><?php echo $str[$i]['sub_title'] ?></option>
+                    <option value="<?php echo $str[$i]['sub_title']?>" name="item"><?php echo $str[$i]['sub_title'] ?></option>
                     <?php 
                         }
                     ?>
@@ -304,13 +304,13 @@
             <div class="color-box">
                 <p>색상</p>
                 <select>
-                    <option value="black">검정</option>
-                    <option value="green">초록</option>
-                    <option value="pink">핑크</option>
+                    <option value="black" name="color">검정</option>
+                    <option value="green" name="color">초록</option>
+                    <option value="pink" name="color">핑크</option>
                 </select>
             </div>
             <div class="submit-btn">
-                <button type="submit">구매하기</button>
+                <button type="submit" class="submit-btn">구매하기</button>
                 <button type="button" class="delete-btn">닫기</button>
             </div>
         </form>        

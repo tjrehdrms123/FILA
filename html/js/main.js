@@ -19,4 +19,20 @@ $(document).ready(function(){
     $('.delete-btn').click(function(){
         $('.item-box').fadeOut()
     });
+    
+    // 전송 버튼 Ajax
+    $('.submit-btn').click(function(){
+       $.ajax({
+           url : "/dressform.php",
+           contentType: 'application/x-www-form-urlencoded;charset=euc-kr',
+           data : {
+               name : name,
+               password : password,
+               item : item,
+               color : color
+           },
+           dataType : "json",
+           timeout : 30000 ,
+       });  
+    });
 });
