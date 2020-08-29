@@ -79,3 +79,79 @@
 .ratate{
 	transform: rotate(30deg;)
 }
+
+/* 상품주문영역 시작 */
+.item-box{
+    max-width: 100%;
+    width: 1200px;
+    height: 100%;
+    background:#e6e7f5;
+    position: fixed;
+    top: 0px;   
+    padding: 50px 50px;
+    font-weight: 300;
+    display: none;
+}
+.item-img-box{
+    max-width: 530px;
+    width: 100%;
+    height: 400px;
+    padding: 25px;
+    float: left;
+}
+.item-img-box > img{
+    height: 400px;
+    width: 480px;
+}
+.item-des-box{
+    max-width: 530px;
+    width: 100%;
+    height: 400px;
+    float: right;
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 40px;
+}
+.item-des-title{
+    line-height: 0;
+    font-size: 22px;
+    font-weight:400;
+}
+.item-des{
+    line-height: 3.5;
+}
+.item-des > p{
+    width: 100px;
+}
+.item-des-box p{
+    margin: 0px;
+    display: inline-block;
+}
+.item-total{
+    color: red;
+    font-weight: bold;
+}
+.dress-submit{
+    background: #ededed;
+}
+.id-box{
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+}
+.password-box{
+    float: right;
+    width: 50%;
+    margin-top: 30px;
+}
+.item-list-box{
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+}
+.color-box{
+    float: right;
+    width: 50%;
+    margin-top: 30px;
+}
+/* 상품주문영역 종료 */
