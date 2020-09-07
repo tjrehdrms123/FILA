@@ -1,0 +1,12 @@
+.main-wrapper{
+    padding: 0px;
+}
+.item-img-box{
+    display: none;
+}
+.item-des-box{
+    max-width: none;
+}
+.item-des > p,span{
+    font-size: 12px;
+}
