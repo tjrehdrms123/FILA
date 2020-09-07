@@ -15,7 +15,7 @@
         <ul id="header-navi" class="header-navi">
 			<li><a href="/?sub=page1">MAN</a></li>
 			<li><a href="/?sub=page2">WOMAN</a></li>
-			<li><a href="/?sub=page3">BEST</a></li>
+			<li><a href="/?sub=page3">FAQ</a></li>
         </ul>
         <!-- /반응형을 위한 네비게이터 마크업 -->
     </div>
