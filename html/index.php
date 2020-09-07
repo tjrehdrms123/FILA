@@ -28,7 +28,7 @@
 <link href="./src/sub-wide.css" media="screen and (min-width: 801px)" type="text/css" rel="stylesheet" />
 <?php } else { ?>
 <link href="./src/main.css" type="text/css" rel="stylesheet" />
-<link href="./src/main-narrow.css" media="screen and (max-width: 800px)" type="text/css" rel="stylesheet" />
+<link href="./src/main-narrow.css" media="screen and (max-width: 1200px)" type="text/css" rel="stylesheet" />
 <link href="./src/main-wide.css" media="screen and (min-width: 801px)" type="text/css" rel="stylesheet" />
 <?php } ?>
 </head>
