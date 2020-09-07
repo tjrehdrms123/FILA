@@ -1,4 +1,13 @@
 <div class="main-content">
+    <div class="mobile-slide">
+        <img src="images/slide/mobile_slide.jpg" alt="mobile-slide.img">
+        <div class="slide-sub-box">
+            <p class="mobile-slide-text">지금 여기, 이곳을 넘어<br>
+                <h4 class="bold">GO BEYOND<br>FALL COLLECTION</h4>
+            </p>
+            <p class="mobile-slide-subtext">내안의 또 다른 세상을 만나다.<br>방탄소년단과 함께 펼쳐보는 가을 컬렉션</p>
+        </div>
+    </div>
     <ul id="img-slide">
         <li class="img-box">
             <img src="images/slide/slide01.png" alt="img1">

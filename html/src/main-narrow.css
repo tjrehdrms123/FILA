@@ -1,6 +1,20 @@
 .main-wrapper{
     padding: 0px;
 }
+/* 슬라이드 이미지*/
+#img-slide{
+    display: none;
+}
+.mobile-slide{
+    display: block;
+}
+
+/* 이미지 박스 */
+.dress-box{
+    margin-right: 0px;
+}
+
+/* 팝업 */
 .item-img-box{
     display: none;
 }

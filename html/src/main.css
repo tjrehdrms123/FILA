@@ -1,3 +1,6 @@
+.bold{
+    font-weight:bold;
+}
 .main-content{
 	display: block;
 	text-align: center;
@@ -7,6 +10,36 @@
 	text-align: left;
 	padding-left: 114px;
 }
+
+
+/* 모바일 이미지 슬라이드 시작*/
+.mobile-slide{
+    display: none;
+    position: relative;
+}
+.mobile-slide > img{
+    width: 100%;
+}
+.slide-sub-box{
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    max-width: 1200px;
+    background: #fff;
+    border: 4px solid;
+    font-weight: 300;
+}
+.mobile-slide-text{
+    margin-bottom: 0px;
+}
+.slide-sub-box > h4{
+    margin-top: 0px;
+}
+.mobile-slide-subtext{
+    color: #7e7e7e;
+}
+/* 모바일 이미지 슬라이드 종료*/
+
 /* 이미지 슬라이드 시작*/
 #img-slide{
 	width: 100%;

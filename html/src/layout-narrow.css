@@ -8,13 +8,14 @@
    position: relative;
    width: 100%;
    text-align: right;
-   background: #EAEAEA;
 }
 
 .header-logo {
    position: absolute;
-   left: 10px;
    margin: 0;
+   width: 100%;
+   max-width: 1200px;
+   text-align: center;
 }
 .logo{
 	width: 60px;
@@ -73,6 +74,7 @@
    text-align: center;
    height: 0;
    overflow: hidden;
+   z-index: 1;
 }
 .header-navi > li {
    display: block;
