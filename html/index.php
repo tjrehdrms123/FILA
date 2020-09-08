@@ -31,6 +31,8 @@
 <link href="./src/main-narrow.css" media="screen and (max-width: 1200px)" type="text/css" rel="stylesheet" />
 <link href="./src/main-wide.css" media="screen and (min-width: 801px)" type="text/css" rel="stylesheet" />
 <?php } ?>
+<!-- Enabled options Font Awesome v4.7.0-->
+<script src="https://use.fontawesome.com/7de146d9e3.js"></script>
 </head>
 <!--
  > http-equiv = html4 , html5 호환(구형웹브라우져호환)
@@ -45,7 +47,7 @@
 <!-- /상단 영역 -->
 <!-- 콘텐츠 영역 -->
 <div class="main-wrapper">
-	<div class="main">
+	<div>
 	<?php
 	if (isset($_GET['sub'])) {
 		include "./sub/{$_GET['sub']}.html";

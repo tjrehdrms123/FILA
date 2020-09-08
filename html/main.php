@@ -1,4 +1,4 @@
-<div class="main-content">
+<div>
     <div class="mobile-slide">
         <img src="images/slide/mobile_slide.jpg" alt="mobile-slide.img">
         <div class="slide-sub-box">
@@ -37,6 +37,8 @@
             <img src="images/slide/slide09.png" alt="img9">
         </li>
     </ul>
+</div>
+<div class="main-content main">
     <?php
     $str = array(
        array(
@@ -99,18 +101,8 @@
         'price' => 69000,
         'sqle' => '49000 (25% ↓)'
        ),
-       array(
-        'title' => '<온라인단독>FILAECH 등판 로고',
-        'sub_title' => '휠라레이',
-        'price' => 59000,
-        'sqle' => '49000 (17% ↓)'
-       ),
-       array(
-        'title' => '<온라인단독>FILAECH 등판 로고',
-        'sub_title' => '레이 트레이서',
-        'price' => 69000,
-        'sqle' => '59000 (12% ↓)'
-       ),
+       
+       
        // 2번째 영역
        array(
         'title' => '<온라인단독>',
@@ -183,13 +175,66 @@
         'sub_title' => '키츠 사이드 빅 F 로고 맨투맨',
         'price' => 69000,
         'sqle' => '59000 (12% ↓)'
-       ),        
+       ),
     );
+    ?>
+    
+    <?php 
+    $str2 = array(
+       array(
+        'title' => 'make it funky!<br>FUNKY TENNIS',
+        'sub_title' => 'FILA의 테니스 헤리티지를<br>담은 슈즈, FUNKY TENNIS',
+       ),
+       array(
+        'title' => ' FILA KIDS ADVENTURE GAME<br>숨겨진 히어로를 찾아라! ',
+        'sub_title' => '호기심 가득한 키즈들을 위한<br>#FILA키즈 #플리스 #맨투맨',
+       ),        
+       array(
+        'title' => 'FILA ON THE MOON',
+        'sub_title' => '과학과 사람들과 FILA의 특별한 이야기!',
+       ), 
+       array(
+        'title' => 'FILA X 권순우',
+        'sub_title' => '“The challenger will change the game”<br>패배자, 그리고 도전자<br>그가 만들어 갈 또 다른 도전에 대하여',
+       ),   
+       array(
+        'title' => 'FILA DECYPHER',
+        'sub_title' => '따분한 일상을 힙하게!<br>나만의 취저 데일리슈즈 디사이퍼',
+       ), 
+       array(
+        'title' => 'FILA ACC UP TO 62% SALE',
+        'sub_title' => '휠라 퍼포먼스 라인의 다양한 가방과 모자를<br>최대 62% 할인된 금액으로 만나보세요!',
+       ), 
+       array(
+        'title' => '지금 여기, 이곳을 넘어<br>GO BEYOND',
+        'sub_title' => '내안의 또 다른 세상을 만나다. 방탄소년단과<br> 함께 펼쳐보는 가을 컬렉션',
+       ),
+       array(
+        'title' => 'OUTFIT VINTAGE',
+        'sub_title' => '딥한 컬러감을 중심으로 전개되는 아웃핏 빈티지 라인',
+       ), 
+       array(
+        'title' => 'SYNDICATOR',
+        'sub_title' => '발검을을 가볍게,<br>나만의 데일리 러닝슈즈',
+       ),  
+       array(
+        'title' => 'SANDBLAST LOW',
+        'sub_title' => '1998년 최초 출시된 SANDBLAST LOW<br>오리지널 모델에 기반을 둔 소재와 컬러로<br>새롭게 태어남'
+       ),    
+       array(
+        'title' => 'ZAGATO NEW COLOR',
+        'sub_title' => '상큼뽀짝♡<br>나만의 데일리 조거 신발',
+       ),
+       array(
+        'title' => 'FILA HELIX',
+        'sub_title' => '더심쿵...♡ 앞코가 동글동글<br>헬릭스 신고 귀염뽀작',
+       ),          
+    )
     ?>
     <!-- one drress-box -->
     <p class="title">BEST ITEM</p>
     <?php 
-        for( $i = 0; $i<count($str)/2;  $i++ ){
+        for( $i = 0; $i<count($str)/2-1;  $i++ ){
             $num = sprintf('%02d',($i+1));
     ?>
     <div class="dress-box">
@@ -245,6 +290,33 @@
 	?>
     <!-- two drress-box -->
 
+    <!-- Sub dress box-->
+    <div>
+        <h2 class="sub_title">
+            <span>FILA NOW</span>
+        </h2>
+        <ul class="sub-dress-box">
+        <?php 
+            for( $i = 0; $i<count($str2); $i++ ){
+                $num = sprintf("%02d",($i+1));
+                
+        ?>
+        <li class="sub-dress-item">
+            <a href="#">
+                <img src="images/subdress/subdress<?php echo $num?>.jpg">
+                <dl>
+                    <dt><?php echo $str2[$i]['title'] ?></dt>
+                    <dd><?php echo $str2[$i]['sub_title'] ?></dd>
+                </dl>
+            </a>
+        </li>
+        <?php
+            }
+        ?>                                         
+        </ul>
+    </div>
+    <!-- Sub dress box-->
+   
     <!-- form-box -->
     <?php 
     $str2 = array(

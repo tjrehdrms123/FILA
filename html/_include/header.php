@@ -1,8 +1,26 @@
+<?php
+    $uri= $_SERVER['REQUEST_URI'];
+?>
 <div class="header-wrapper">
+    <h1 class="header-logo">
+        <a href="<?php $uri ?>">
+            <img src="./images/logo_new.png" alt="logo" class="logo">
+        </a>        
+    </h1>
     <div id="header" class="header">
-        <h1 class="header-logo">
-        	<img src="./images/logo_new.png" alt="logo" class="logo">
-        </h1>
+        <div>
+            <div class="inp-box">
+                <input type="text" class="inp_search" name="" id="" value="" placeholder="BTS 가을 컬렉션">
+                <label for="search-input">
+                    <i class="fa fa-search pull-right cus-search" aria-hidden="true"></i>
+                    <span class="sr-only" papago-id="50" papago-translate="translated">
+                        <font class="papago-parent">
+                            <font class="papago-source" style="display:none;">Search icons</font>검색 아이콘
+                        </font>
+                    </span>
+                </label>
+            </div>
+        </div>
         <!-- 반응형을 위한 네비게이터 마크업 -->
         <!-- label, input 태그는 wide의 경우에는 불필요하므로display: none으로 처리 필요 -->
         <!--
@@ -12,11 +30,17 @@
         -->
         <input type="checkbox" id="header-navi-toggle" />
         <label for="header-navi-toggle"><span></span></label>
-        <ul id="header-navi" class="header-navi">
-			<li><a href="/?sub=page1">MAN</a></li>
-			<li><a href="/?sub=page2">WOMAN</a></li>
-			<li><a href="/?sub=page3">FAQ</a></li>
+
+        <ul id="header-navi" class="header-navi">            
+            <li><a href="/?sub=page1">EVENT</a></li>
+            <li><a href="/?sub=page2">REVIEW</a></li>
+            <li><a href="/?sub=page3">FAQ</a></li>
         </ul>
+        <div class="pc-event">
+            <span class="header-event">
+                <a href="#">기획전&이벤트&룩북</a>
+            </span>
+        </div>        
         <!-- /반응형을 위한 네비게이터 마크업 -->
     </div>
 </div>

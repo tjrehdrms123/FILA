@@ -6,14 +6,25 @@
     display: none;
 }
 .mobile-slide{
+    text-align: center;
     display: block;
 }
 
 /* 이미지 박스 */
 .dress-box{
+    width: 180px;
     margin-right: 0px;
 }
+.dress-box img{
+    width: 100%;
+}
 
+/* 서브이미지 박스*/
+.sub-dress-item {
+    width: 150px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
 /* 팝업 */
 .item-img-box{
     display: none;

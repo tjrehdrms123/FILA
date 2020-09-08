@@ -4,6 +4,7 @@
 .header-wrapper {
     width: 100%;
 }
+
 .header {
     width: 100%;
     min-width: 801px;
@@ -12,15 +13,22 @@
     margin: 0 auto;
     position: relative;
 }
-.header > input, .header > label {
+
+.header > input,
+.header > label {
     display: none;
 }
+
 .header-logo {
     text-align: center;
     line-height: 1.5;
-	border : 1px solid rgb(239,239,239);
+    border: 1px solid rgb(239, 239, 239);
+    margin: 0px;
 }
+
 .header-navi {
+    width: 1200px;
+    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -28,22 +36,57 @@
     right: 10px;
     bottom: 10px
 }
+
 .header-navi > li {
     display: inline-block;
     margin-left: 10px;
-	line-height: 1.8;
+    line-height: 1.8;
 }
 
+.header-navi > li > a {
+    color: rgb(102, 102, 102);
+}
+.header-event{
+    line-height: 3.8;
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    font-weight: 400;
+    z-index: 1;
+    position: absolute;
+}
+.inp-box {
+    width: 238px;
+    height: 42px;
+    border: 1px solid rgb(215, 215, 215);
+    position: absolute;
+    bottom: 3px;
+    padding: 7px;
+    right: 0px;
+    z-index: 1;
+}
+input:focus {outline:2px solid #fff;}
+.inp-box > input {
+    border: #fff;
+}
+.fa-search{
+    font-size: 16px;
+}
+
+.cus-search{
+    color: #666666a3;
+    font-size: 21px !important;
+}
 /***************************
  * Main 영역
  */
 .main-wrapper {
     width: 100%;
 }
+
 .main {
     width: 100%;
     min-width: 801px;
-    max-width: 1200px;
+    max-width: 1215px;
     min-height: 500px;
     margin: 0 auto;
 }
@@ -55,11 +98,23 @@
 .footer-wrapper {
     width: 100%;
 }
+
 .footer {
-    width: 100%;
-    min-width: 801px;
-    max-width: 1200px;
+    clear: both;
+    height: 251px;
+    background: rgb(238,238,238);
+    min-width: 1200px;    
+}
+.sub-footer{
+    padding-top: 20px;
+    background: rgb(238,238,238);
+    width: 1200px;
     margin: 0 auto;
 }
-
-
+.sub-footer > ul{    
+    display: inline-table;
+}
+.sub-footer > ul > li{
+    width: 235px;
+    font-size: 12px;
+}

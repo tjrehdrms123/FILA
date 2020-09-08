@@ -8,9 +8,11 @@
 }
 .title{
 	text-align: left;
-	padding-left: 114px;
+    color: rgb(102,102,102);
 }
-
+.sub_title{
+    color: rgb(102,102,102);  
+}
 
 /* 모바일 이미지 슬라이드 시작*/
 .mobile-slide{
@@ -43,8 +45,7 @@
 /* 이미지 슬라이드 시작*/
 #img-slide{
 	width: 100%;
-	max-width: 1200px;
-    height: 318px;
+    height: 400px;
     position: relative;
 	border:1px solid rgb(239,239,239);
 	overflow: hidden;
@@ -53,7 +54,6 @@
 #img-slide li > img{
     position: absolute;
 	display: block;
-	width: 1200px;
     max-width: 100%;	
 }		
 #img-slide  li{
@@ -103,7 +103,6 @@
 	margin-bottom: 50px;
 }
 .subbanner > div > img{
-    width: 965px;
     max-width: 100%;	
 	border-top-right-radius: 55px;
 }
@@ -112,6 +111,35 @@
 .ratate{
 	transform: rotate(30deg;)
 }
+
+/* 서브 상품영역 시작*/
+.sub-dress-item{
+    width: 265px;
+    opacity: 1;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 32px;
+    margin-bottom: 55px;
+}
+.sub-dress-item img{
+    width: 100%;
+    border-top-right-radius: 55px;
+}
+.sub-dress-item dl{
+    margin: 0px;
+}
+.sub-dress-item dt{
+    text-align: left;
+    margin: 0px;
+    font-weight: bold;
+}
+.sub-dress-item dd{
+    margin: 0px;
+    text-align: left;
+    font-size: 13px;
+    color: rgb(102, 102, 102);
+}
+/* 서브 상품영역 종료*/
 
 /* 상품주문영역 시작 */
 .item-box{

@@ -15,7 +15,7 @@
    margin: 0;
    width: 100%;
    max-width: 1200px;
-   text-align: center;
+   text-align: center;   
 }
 .logo{
 	width: 60px;
@@ -93,7 +93,12 @@
     height: 200px;
     box-shadow: 0 2px 2px #CCC;
 }
-
+.inp-box{
+    display: none;
+}
+.header-event{
+    display: none;
+}
 /***************************
  * Main 영역
  */
@@ -115,4 +120,6 @@
 .footer {
     width: 100%;
 }
-
+.sub-footer{
+    display: none;
+}
