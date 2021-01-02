@@ -1,9 +1,9 @@
 <?php
-    $uri= $_SERVER['REQUEST_URI'];
+    $hostname=$_SERVER["HTTP_HOST"]; //도메인명(호스트)명을 구합니다.
 ?>
 <div class="header-wrapper">
     <h1 class="header-logo">
-        <a href="<?php $uri ?>">
+        <a href="<?php echo "http://".$hostname ?>">
             <img src="./images/logo_new.png" alt="logo" class="logo">
         </a>        
     </h1>
@@ -32,7 +32,7 @@
         <label for="header-navi-toggle"><span></span></label>
 
         <ul id="header-navi" class="header-navi">            
-            <li><a href="/?sub=page1">EVENT</a></li>
+            <li><a href="/?sub=page1">기념일 계산기</a></li>
             <li><a href="/?sub=page2">REVIEW</a></li>
             <li><a href="/?sub=page3">FAQ</a></li>
         </ul>

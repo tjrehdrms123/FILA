@@ -1,33 +1,64 @@
-<h1 class="doctitle">JavaScript Test</h1>
-<img src="images/dress/dress01.jpg" alt="" class="box">
-<img src="images/dress/dress02.jpg" alt="" class="box">
-<script>
-// 클릭했을때 이미지 교체하는 JS 
-// 0번 이미지는 로고여서 for문을 1부터 시작
-	
-window.addEventListener('load',function(){
-	var elImg = document.querySelectorAll('img');
-	for( var i = 1; i<=elImg.length; i++ ){
-		elImg[i].addEventListener('click',function(){
-			console.log(this.src);
-			if( this.src === 'http://tjrdydrms.dothome.co.kr/images/dress/dress01.jpg' ){
-				this.src = 'http://tjrdydrms.dothome.co.kr/images/dress/dress02.jpg'
-			}else if( this.src === 'http://tjrdydrms.dothome.co.kr/images/dress/dress02.jpg' ){
-				this.src = 'http://tjrdydrms.dothome.co.kr/images/dress/dress01.jpg'
-			}
-		});
-	}
-});
-// https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/animations/box-move-simple.html
-	var box = document.querySelectorAll('.box');
-	for( var i = 0; i<box.length; i++ ){
-		box[i].addEventListener('click', function() {
-			box[i].classList.toggle('move');
-		});		
-	}
+<div class="container">
+	<div class="day1">
+		<h3>우리 만난지</h3>
+		<p id="accent" class="accent"><span style="font-size:0.6em; font-style:italic">며칠?</span></p>
+		</div>
+		<div class="bar">기념일 계산</div>
+		<div class="day2">
+			<ul>
+				<li class="item-title">100일</li>         
+				<li class="item-date" id="date100"></li>
+			</ul>
+			<ul>
+				<li class="item-title">200일</li>
+				<li class="item-date" id="date200"></li>
+			</ul>     
+			<ul>
+				<li class="item-title">1년</li>
+				<li class="item-date" id="date365"></li>
+				</ul>      
+			<ul>
+				<li class="item-title">500일</li>
+				<li class="item-date" id="date500"></li>
+			</ul>      									     
+	</div>
+</div>
 
-	var box = document.querySelector('.box');
-	box.addEventListener('click', function() {
-		box.classList.toggle('move');
-	});    
+<script>
+var dayAnswer = prompt('기념일 계신기 입니다. 연애의 시작일을 적어주세요',' 예) 2020-12-01');
+var numAnswer = prompt('기념일 계신기 입니다. 100일 , 200일 , 365일 , 500일 구하고 싶은 날짜를 작성해주세요',' 예) 365');
+var ok = confirm('정확하게 입력했습니까?');
+console.log(dayAnswer);
+console.log(numAnswer);
+if(ok === true){
+	dayFuc(dayAnswer,numAnswer);
+}else{
+	alert('정확하게 다시 입력해주세요');
+	location.reload();
+}
+
+function dayFuc(dayAnswer,numAnswer){
+	var now = new Date();
+	var firstDay = new Date(dayAnswer);
+
+	var toNow = now.getTime();
+	var toFirst = firstDay.getTime();
+	var passedTime = toNow - toFirst;
+	var passedDay = Math.round(passedTime / (24 * 60 * 60 * 1000) );
+
+	// 100 , 200 , 365 , 500 일 계산
+	var future = toFirst + numAnswer * (24 * 60 * 60 * 1000);
+	var someDay = new Date(future);
+
+	var year = someDay.getFullYear();
+	var month = someDay.getMonth() + 1;
+	var date = someDay.getDate();
+
+	setInterval(function(){
+		document.querySelector('#accent').innerHTML = passedDay + "일";
+		document.querySelector('#date'+numAnswer).innerHTML = year + "년" + month + "월" + date + "일";
+	},1000);
+
+}
+dayFuc(dayAnswer,numAnswer);
 </script>
